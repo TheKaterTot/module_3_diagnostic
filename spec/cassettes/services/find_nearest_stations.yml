@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=XXVVtRNYsdh9YmpPz1QGR63ctrjzbA4UPf8Ojpyz&limit=10&location=94102
+    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=XXVVtRNYsdh9YmpPz1QGR63ctrjzbA4UPf8Ojpyz&location=94102&radius=6.0
     body:
       encoding: US-ASCII
       string: ''
@@ -27,9 +27,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 16:51:45 GMT
+      - Wed, 29 Mar 2017 16:56:32 GMT
       Last-Modified:
-      - Wed, 29 Mar 2017 16:51:45 GMT
+      - Wed, 29 Mar 2017 16:56:32 GMT
       Server:
       - openresty
       Vary:
@@ -43,18 +43,18 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '995'
+      - '991'
       X-Request-Id:
-      - 2079c077-a633-483b-89cb-f2311fb0e843
+      - 250b34f5-909c-463c-aa49-604bb652b0e6
       X-Runtime:
-      - '0.011523'
+      - '0.037066'
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"latitude":37.7786871,"longitude":-122.4212424,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":172,"station_counts":{"total":507,"fuels":{"E85":{"total":2},"ELEC":{"total":501,"stations":{"total":166}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":1},"CNG":{"total":2},"LPG":{"total":1}}},"offset":0,"fuel_stations":[{"access_days_time":"24
+      string: '{"latitude":37.7786871,"longitude":-122.4212424,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":188,"station_counts":{"total":536,"fuels":{"E85":{"total":2},"ELEC":{"total":527,"stations":{"total":179}},"HY":{"total":0},"LNG":{"total":1},"BD":{"total":1},"CNG":{"total":4},"LPG":{"total":1}}},"offset":0,"fuel_stations":[{"access_days_time":"24
         hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":44979,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CCSF-SFMTA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:17:56Z","geocode_status":"200-8","latitude":37.778097,"longitude":-122.422812,"city":"San
         Francisco","intersection_directions":"360 GROVE ST #2; Public Parking Level
         1 - Parking Rates Apply\n360 GROVE ST #3; Public Parking Level 1 - Parking
@@ -79,12 +79,12 @@ http_interactions:
         PLAZA","station_phone":"888-758-4389","updated_at":"2017-03-29T08:59:26Z","geocode_status":"GPS","latitude":37.7809703,"longitude":-122.4211855,"city":"San
         Francisco","intersection_directions":"GARAGE CHARGER1; -","plus4":null,"state":"CA","street_address":"600-698
         Golden Gate Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
-        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:53243"]},"distance":0.1575},{"access_days_time":"City
-        vehicle use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":35149,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:53243"]},"distance":0.1575},{"access_days_time":"Zipcar
+        use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":50060,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
         Francisco City Hall","station_phone":null,"updated_at":"2017-01-18T01:40:33Z","geocode_status":"GPS","latitude":37.77913,"longitude":-122.418,"city":"San
         Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1
-        Dr Carlton B Goodlet Pl","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.1801},{"access_days_time":"Zipcar
-        use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":50060,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
+        Dr Carlton B Goodlet Pl","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.1801},{"access_days_time":"City
+        vehicle use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":35149,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
         Francisco City Hall","station_phone":null,"updated_at":"2017-01-18T01:40:33Z","geocode_status":"GPS","latitude":37.77913,"longitude":-122.418,"city":"San
         Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1
         Dr Carlton B Goodlet Pl","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.1801},{"access_days_time":"24
@@ -110,7 +110,61 @@ http_interactions:
         Center Garage","station_phone":"415-863-1537","updated_at":"2017-01-18T00:59:01Z","geocode_status":"GPS","latitude":37.780369,"longitude":-122.417824,"city":"San
         Francisco","intersection_directions":"Chargers located on Level 1 and Level
         2","plus4":null,"state":"CA","street_address":"355 McAllister St","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":"1
-        SP Inductive","hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.22016}]}'
+        SP Inductive","hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.22016},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":75439,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Hudson
+        Pacific Properties","station_phone":"888-998-2546","updated_at":"2017-03-29T07:08:41Z","geocode_status":"GPS","latitude":37.776044999,"longitude":-122.418056999,"city":"San
+        Francisco","intersection_directions":"All chargers are Located in Valet\n","plus4":null,"state":"CA","street_address":"1455
+        Market Street","zip":"94103","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["262698"],"posts":["33821"]},"distance":0.25221},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":69741,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"NEMA
+        Apartments","station_phone":"888-998-2546","updated_at":"2017-03-29T07:12:21Z","geocode_status":"GPS","latitude":37.776335,"longitude":-122.417694,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1411
+        Market Street","zip":"94103","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["222962"],"posts":["37352"]},"distance":0.25307},{"access_days_time":"24
+        hours daily; see security to access","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":50949,"groups_with_access_code":"Public","open_date":"2013-02-15","owner_type_code":"P","status_code":"E","station_name":"Wilson
+        Sonsini Goodrich & Rosati","station_phone":"650-493-9300","updated_at":"2017-01-18T01:05:13Z","geocode_status":"GPS","latitude":37.782284,"longitude":-122.418185,"city":"Palo
+        Alto","intersection_directions":null,"plus4":null,"state":"CA","street_address":"650
+        Page Mill Rd","zip":"94304","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.29924},{"access_days_time":"24
+        hours daily; EVgo network subscription and key fob required","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":74207,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UC
+        Hastings Larkin Garage","station_phone":"877-455-3833","updated_at":"2017-03-29T09:47:01Z","geocode_status":"GPS","latitude":37.7811431884766,"longitude":-122.416679382324,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"376
+        Larkin Street","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["CHADEMO","J1772COMBO","J1772"],"ev_dc_fast_num":4,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"eVgo
+        Network","ev_network_web":"https://www.evgonetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["eVgoSA745"],"posts":["EVL-NRG-110615-0130","eVgoABBT53-4015-017-C|eVgoABBT53-4015-017-J","eVgoABBT53-4015-022-C|eVgoABBT53-4015-022-J"],"ports":["EVL-NRG-110615-0130","eVgoABBT53-4015-017-C","eVgoABBT53-4015-017-J","eVgoABBT53-4015-022-C","eVgoABBT53-4015-022-J"]},"distance":0.3018},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":78385,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"MONOGRAM
+        RES","station_phone":"888-758-4389","updated_at":"2017-03-29T08:12:18Z","geocode_status":"200-9","latitude":37.7749643,"longitude":-122.4159925,"city":"San
+        Francisco","intersection_directions":"OLUME 2; Located on level B1 of the
+        garage. Enter from 10th st. \nOLUME 1; Located on level B1 of the garage.
+        Enter from 10th st. ","plus4":null,"state":"CA","street_address":"1401 Mission
+        St","zip":"94103","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:127357","1:124239"]},"distance":0.38537},{"access_days_time":"Employee
+        use only","cards_accepted":null,"date_last_confirmed":"2016-05-09","expected_date":null,"fuel_type_code":"ELEC","id":72363,"groups_with_access_code":"Private","open_date":"2015-07-01","owner_type_code":"FG","status_code":"E","station_name":"James
+        R. Browning U.S. Courthouse","station_phone":null,"updated_at":"2017-01-18T02:10:41Z","geocode_status":"GPS","latitude":37.779944,"longitude":-122.411006,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"95
+        7th St","zip":"94103","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"federal_agency":{"id":12,"name":"Department
+        of Justice"},"distance":0.567},{"access_days_time":"24 hours daily; for Tesla
+        use only; for guest use only; see valet for access","cards_accepted":null,"date_last_confirmed":"2016-05-09","expected_date":null,"fuel_type_code":"ELEC","id":74937,"groups_with_access_code":"Public","open_date":"2016-03-01","owner_type_code":"P","status_code":"E","station_name":"Hotel
+        Kabuki - Tesla","station_phone":"415-922-3200  877-798-3752","updated_at":"2017-01-18T01:36:08Z","geocode_status":"200-8","latitude":37.7854908,"longitude":-122.4286318,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1625
+        Post St","zip":"94115","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["TESLA"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Tesla","ev_network_web":"http://www.teslamotors.com/supercharger","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.6195},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":41340,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CCSF-SFMTA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:12:53Z","geocode_status":"GPS","latitude":37.7849121,"longitude":-122.4302368,"city":"San
+        Francisco","intersection_directions":"JAPAN CENTER; Public Parking Level 1
+        - Parking Rates Apply","plus4":null,"state":"CA","street_address":"1610 Geary
+        Blvd","zip":"94115","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:6820"]},"distance":0.65323},{"access_days_time":"24
+        hours daily; pay lot","cards_accepted":null,"date_last_confirmed":"2016-06-03","expected_date":null,"fuel_type_code":"ELEC","id":21351,"groups_with_access_code":"Public","open_date":"2002-01-31","owner_type_code":"LG","status_code":"E","station_name":"Japan
+        Center Garage","station_phone":"415-567-4573","updated_at":"2017-01-18T01:10:49Z","geocode_status":"GPS","latitude":37.784912,"longitude":-122.430237,"city":"San
+        Francisco","intersection_directions":"Garage Level 1","plus4":null,"state":"CA","street_address":"1610
+        Geary Blvd","zip":"94115","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":"1
+        SP Inductive","hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.65323},{"access_days_time":"24
+        hours daily; EVgo network subscription and key fob required","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":69564,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"San
+        Francisco Nissan","station_phone":"877-455-3833","updated_at":"2017-03-29T09:46:28Z","geocode_status":"GPS","latitude":37.788158416748,"longitude":-122.422370910645,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1395
+        Van Ness Ave.","zip":"94109","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["CHADEMO"],"ev_dc_fast_num":1,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":"eVgo
+        Network","ev_network_web":"https://www.evgonetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["eVgoSA60"],"posts":["eVgoNIS0000000144"],"ports":["eVgoNIS0000000144"]},"distance":0.65613}]}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 16:51:45 GMT
+  recorded_at: Wed, 29 Mar 2017 16:56:32 GMT
 recorded_with: VCR 3.0.3
