@@ -3,14 +3,11 @@ class NrelService
 
   def initialize(token, options={})
     @token = token
-    @client = options.fetch(:client) do
-      Faraday.new(url: "http://developer.nrel.gov/api")
-    end
   end
 
   def nearest_stations(zip)
     parse(Faraday.get("http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?location=#{zip}&radius=6.0&api_key=#{token}")).map do |data|
-     NrelStation.new(data)
+      NrelStation.new(data)
     end
 
   end
