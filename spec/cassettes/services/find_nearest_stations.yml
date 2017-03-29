@@ -21,15 +21,15 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '0'
+      - '1'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 16:56:32 GMT
+      - Wed, 29 Mar 2017 16:59:36 GMT
       Last-Modified:
-      - Wed, 29 Mar 2017 16:56:32 GMT
+      - Wed, 29 Mar 2017 16:59:36 GMT
       Server:
       - openresty
       Vary:
@@ -43,11 +43,11 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '991'
+      - '990'
       X-Request-Id:
-      - 250b34f5-909c-463c-aa49-604bb652b0e6
+      - 9037984f-bdd4-4162-a6c3-caa18ee1256a
       X-Runtime:
-      - '0.037066'
+      - '0.012712'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -166,5 +166,5 @@ http_interactions:
         Van Ness Ave.","zip":"94109","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["CHADEMO"],"ev_dc_fast_num":1,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":"eVgo
         Network","ev_network_web":"https://www.evgonetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["eVgoSA60"],"posts":["eVgoNIS0000000144"],"ports":["eVgoNIS0000000144"]},"distance":0.65613}]}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 16:56:32 GMT
+  recorded_at: Wed, 29 Mar 2017 16:59:36 GMT
 recorded_with: VCR 3.0.3
