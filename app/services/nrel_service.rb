@@ -9,17 +9,13 @@ class NrelService
   end
 
   def nearest_stations(zip)
-    parse(Faraday.get("http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?location=#{zip}&limit=10")).map do |data|
-    #get_data("/alt-fuel-stations/v1/nearest.json?location=#{zip}&limit=10").map do |data|
+    parse(Faraday.get("http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?location=#{zip}&limit=10&api_key=#{token}")).map do |data|
      NrelStation.new(data)
    end
 
   end
 
   private
-  def get_data(path)
-    parse(client.get(path, {access_token: token} ))
-  end
 
   def parse(response)
     JSON.parse(response.body)

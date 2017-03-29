@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?limit=10&location=80204
+    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=XXVVtRNYsdh9YmpPz1QGR63ctrjzbA4UPf8Ojpyz&limit=10&location=94102
     body:
       encoding: US-ASCII
       string: ''
@@ -15,34 +15,102 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
       Access-Control-Allow-Origin:
       - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Wed, 29 Mar 2017 16:48:03 GMT
+      - Wed, 29 Mar 2017 16:51:45 GMT
+      Last-Modified:
+      - Wed, 29 Mar 2017 16:51:45 GMT
       Server:
       - openresty
       Vary:
       - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
       - MISS
-      Content-Length:
-      - '142'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '995'
+      X-Request-Id:
+      - 2079c077-a633-483b-89cb-f2311fb0e843
+      X-Runtime:
+      - '0.011523'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: |-
-        {
-          "error": {
-            "code": "API_KEY_MISSING",
-            "message": "No api_key was supplied. Get one at https://developer.nrel.gov/signup/"
-          }
-        }
+      string: '{"latitude":37.7786871,"longitude":-122.4212424,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":172,"station_counts":{"total":507,"fuels":{"E85":{"total":2},"ELEC":{"total":501,"stations":{"total":166}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":1},"CNG":{"total":2},"LPG":{"total":1}}},"offset":0,"fuel_stations":[{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":44979,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CCSF-SFMTA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:17:56Z","geocode_status":"200-8","latitude":37.778097,"longitude":-122.422812,"city":"San
+        Francisco","intersection_directions":"360 GROVE ST #2; Public Parking Level
+        1 - Parking Rates Apply\n360 GROVE ST #3; Public Parking Level 1 - Parking
+        Rates Apply\n360 GROVE ST #1; Public Parking Level 1 - Parking Rates Apply\n360
+        GROVE ST #4; Public Parking Level 1 - Parking Rates Apply","plus4":null,"state":"CA","street_address":"360
+        Grove St","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":4,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:4290","1:4563","1:6838","1:6855"]},"distance":0.09507},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":79330,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"DGS
+        MAIN","station_phone":"888-758-4389","updated_at":"2017-03-29T08:00:22Z","geocode_status":"200-8","latitude":37.7803588,"longitude":-122.420858,"city":"San
+        Francisco","intersection_directions":"505 GW; Entry level turn left in garage\n505
+        VAN #2; Entry level turn left in garage\n505 VAN #1; Entry level turn left
+        in garage\n505 VAN #4; Entry level turn left in garage\n505 STAND ALONE; Stand
+        alone station 2nd. level","plus4":null,"state":"CA","street_address":"505
+        Van Ness Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":9,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:154889","1:153845","1:153817","1:153815","1:125117"]},"distance":0.1172},{"access_days_time":"Employee
+        use only","cards_accepted":null,"date_last_confirmed":"2016-05-09","expected_date":"2016-06-01","fuel_type_code":"ELEC","id":70672,"groups_with_access_code":"PLANNED
+        - not yet accessible (Private)","open_date":null,"owner_type_code":"P","status_code":"P","station_name":"California
+        Public Utilities Commission (CPUC)","station_phone":null,"updated_at":"2017-01-18T00:33:11Z","geocode_status":"GPS","latitude":37.780429,"longitude":-122.420768,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"505
+        Van Ness Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":5,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.12291},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":51949,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"OPERA
+        PLAZA","station_phone":"888-758-4389","updated_at":"2017-03-29T08:59:26Z","geocode_status":"GPS","latitude":37.7809703,"longitude":-122.4211855,"city":"San
+        Francisco","intersection_directions":"GARAGE CHARGER1; -","plus4":null,"state":"CA","street_address":"600-698
+        Golden Gate Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:53243"]},"distance":0.1575},{"access_days_time":"City
+        vehicle use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":35149,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
+        Francisco City Hall","station_phone":null,"updated_at":"2017-01-18T01:40:33Z","geocode_status":"GPS","latitude":37.77913,"longitude":-122.418,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1
+        Dr Carlton B Goodlet Pl","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.1801},{"access_days_time":"Zipcar
+        use only","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":50060,"groups_with_access_code":"Private","open_date":"2009-08-15","owner_type_code":"LG","status_code":"E","station_name":"San
+        Francisco City Hall","station_phone":null,"updated_at":"2017-01-18T01:40:33Z","geocode_status":"GPS","latitude":37.77913,"longitude":-122.418,"city":"San
+        Francisco","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1
+        Dr Carlton B Goodlet Pl","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.1801},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":48172,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CCSF-SFMTA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:02:27Z","geocode_status":"GPS","latitude":37.7809334,"longitude":-122.4191818,"city":"San
+        Francisco","intersection_directions":"SFPUC HEADQTRS1; Parking Curbside-Parking
+        Meter Time Limit & Rates Apply","plus4":null,"state":"CA","street_address":"525
+        Golden Gate Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:35293"]},"distance":0.19163},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":41338,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CCSF-SFMTA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:16:46Z","geocode_status":"200-8","latitude":37.7794918,"longitude":-122.417618,"city":"San
+        Francisco","intersection_directions":"CIVIC CENTER 3; Public Parking Level
+        1 & 2, Parking Rates Apply\nCIVIC CENTER 5\nCIVIC CENTER 2; Public Parking
+        Level 1 & 2, Parking Rates Apply\nCIVIC CENTER; Public Parking Level 1 & 2,
+        Parking Rates Apply\nCIVIC CENTER 6; Public Parking Level 1 & 2, Parking Rates
+        Apply ","plus4":null,"state":"CA","street_address":"355 McAllister St","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":4,"ev_level2_evse_num":5,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:4970","1:6441","1:6828","1:7121","1:34093"]},"distance":0.20602},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":49995,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"OPERA
+        PLAZA","station_phone":"888-758-4389","updated_at":"2017-03-29T09:01:23Z","geocode_status":"GPS","latitude":37.7818291,"longitude":-122.4214379,"city":"San
+        Francisco","intersection_directions":"GARAGE CHARGER2; Valet park with attendants
+        and provide your chargepoint FOB.","plus4":null,"state":"CA","street_address":"601
+        Van Ness Ave","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:38713"]},"distance":0.21696},{"access_days_time":"24
+        hours daily; pay lot","cards_accepted":null,"date_last_confirmed":"2016-06-03","expected_date":null,"fuel_type_code":"ELEC","id":21366,"groups_with_access_code":"Public","open_date":"2002-01-31","owner_type_code":"LG","status_code":"E","station_name":"Civic
+        Center Garage","station_phone":"415-863-1537","updated_at":"2017-01-18T00:59:01Z","geocode_status":"GPS","latitude":37.780369,"longitude":-122.417824,"city":"San
+        Francisco","intersection_directions":"Chargers located on Level 1 and Level
+        2","plus4":null,"state":"CA","street_address":"355 McAllister St","zip":"94102","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":"1
+        SP Inductive","hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.22016}]}'
     http_version: 
-  recorded_at: Wed, 29 Mar 2017 16:48:03 GMT
+  recorded_at: Wed, 29 Mar 2017 16:51:45 GMT
 recorded_with: VCR 3.0.3
