@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe NrelService do
-  let(:token) { ENV['ACCESS_TOKEN'] }
+  let(:token) { ENV['nrel_key'] }
   let(:service) { NrelService.new(token) }
 
   describe "#nearest_stations" do

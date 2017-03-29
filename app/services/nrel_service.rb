@@ -10,8 +10,9 @@ class NrelService
 
   def nearest_stations(zip)
     get_data("/alt-fuel-stations/v1/nearest.json?location=#{zip}&limit=10").map do |data|
-      NrelStation.new(data)
-    end
+     NrelStation.new(data)
+   end
+
   end
 
   private
